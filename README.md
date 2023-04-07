@@ -26,7 +26,7 @@
 ## BAZELの実行準備
 - touch WORKSPACE
     - SET UPに書いてあるコードをpaste
-    - ![gazelle](https://github.com/bazelbuild/bazel-gazelle#running-gazelle-with-go)
+    - [gazelle](https://github.com/bazelbuild/bazel-gazelle#running-gazelle-with-go)
 - touch BUILD.bazel
 ```
 load("@bazel_gazelle//:def.bzl", "gazelle")
