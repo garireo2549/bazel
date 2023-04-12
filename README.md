@@ -92,3 +92,22 @@ INFO: Build completed successfully, 1 total action
 INFO: Running command line: bazel-bin/cmd/cmd_/cmd
 cgnojre49b3jidljdomg
 ```
+
+## test
+- build
+    - `bazel run //:gazelle`
+    - `bazel run //:gazelle -- update-repos -from_file=go.mod`
+- test
+    - `bazel test //...`
+```
+bazel?[main]: % bazel test //...
+INFO: Analyzed 3 targets (0 packages loaded, 0 targets configured).
+INFO: Found 2 targets and 1 test target...
+INFO: Elapsed time: 0.190s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+//cmd:cmd_test                                                  (cached) PASSED in 0.4s
+
+Executed 0 out of 1 test: 1 test passes.
+There were tests whose specified size is too big. Use the --test_verbose_timeout_warnings command line option to see which ones these are.
+```
